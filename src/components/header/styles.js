@@ -6,6 +6,12 @@ export const Container = styled.div`
   margin: 0 auto;
   padding: 0 20px;
 `;
+export const BoxCategory = styled.div`
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+`;
 export const Div = styled.div`
   max-width: 1200px;
   margin: 0 auto;

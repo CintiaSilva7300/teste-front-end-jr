@@ -5,6 +5,7 @@ import {
   BoxTypography,
   Text,
   Div,
+  BoxCategory,
 } from './styles';
 import img from '../../utils/img/Group35.svg';
 import imgShieldCheck from '../../utils/img/ShieldCheck.svg';
@@ -15,6 +16,7 @@ import Group from '../../utils/img/Group.svg';
 import Heart from '../../utils/img/Heart.svg';
 import UserCircle from '../../utils/img/UserCircle.svg';
 import ShoppingCart from '../../utils/img/ShoppingCart.svg';
+import Category from '../category';
 
 export default function Header() {
   return (
@@ -148,6 +150,9 @@ export default function Header() {
           }}
         />
       </Container>
+      <BoxCategory>
+        <Category />
+      </BoxCategory>
     </>
   );
 }

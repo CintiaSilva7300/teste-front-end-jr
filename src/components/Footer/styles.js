@@ -88,3 +88,60 @@ export const CardTextInfo = styled.div`
   line-height: 19px; /* 158.333% */
 `;
 export const Input = styled.div``;
+
+const styles = {
+  container: {
+    display: 'block',
+    flexWrap: 'wrap',
+    justifyContent: 'scenter',
+    flexDirection: 'colum',
+    marginLeft: 100,
+    marginTop: 30,
+  },
+  info: {
+    display: 'block',
+    flexWrap: 'wrap',
+    justifyContent: 'scenter',
+    flexDirection: 'colum',
+    marginLeft: 100,
+    marginTop: 30,
+  },
+  pag: {
+    display: 'block',
+    flexWrap: 'wrap',
+    justifyContent: 'scenter',
+    flexDirection: 'colum',
+    marginLeft: 100,
+    marginTop: 30,
+  },
+  cardContainer: {
+    marginBottom: 20,
+    marginTop: 20,
+    color: '#000',
+  },
+  input: {
+    marginTop: 10,
+    marginLeft: 40,
+    borderRadius: 4,
+    border: ' 1px solid #2a2a2a',
+    background: '#fff',
+    width: 230,
+    height: 45,
+  },
+  text: {
+    color: '#FFF',
+    fontFamily: 'Poppins',
+    fontSize: 10,
+    fontStyle: 'normal',
+    fontWeight: 400,
+    textAlign: 'starts',
+    textTransform: 'uppercase',
+  },
+  img: {
+    marginLeft: 250,
+    width: 226.084,
+    height: 32,
+    marginTop: 20,
+  },
+};
+export default styles;

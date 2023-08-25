@@ -1,6 +1,7 @@
+import './Carousel.css';
+import styles from './styles';
 import React, { useState } from 'react';
 import next from '../../utils/img/next.svg';
-import './Carousel.css';
 
 const Carousel = () => {
   const data = [
@@ -39,10 +40,10 @@ const Carousel = () => {
   const visibleData = data.slice(startIndex, startIndex + imagesPerPage);
 
   return (
-    <div className="carousel">
-      <div className="image-list">
+    <div style={styles.carousel}>
+      <div style={styles.imageList}>
         {visibleData.map((item, index) => (
-          <div key={index} className="image ">
+          <div key={index} style={styles.image}>
             <div className="imgTrans" style={{ width: 230 }}>
               <img
                 style={{

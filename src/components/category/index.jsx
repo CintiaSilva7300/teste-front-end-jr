@@ -1,4 +1,4 @@
-import { Container, Text, TextOf } from './styles';
+import styles, { Container, Text, TextOf } from './styles';
 import CrownSimple from '../../utils/img/CrownSimple.svg';
 
 export default function Category() {
@@ -13,11 +13,7 @@ export default function Category() {
         <TextOf style={{ marginTop: 12 }}>OFERTAS DO DIA</TextOf>
 
         <div style={{ display: 'flex' }}>
-          <img
-            src={CrownSimple}
-            alt="imagem"
-            style={{ marginTop: 10, width: 20, height: 20, margin: 9 }}
-          />
+          <img src={CrownSimple} alt="imagem" style={styles.img} />
           <Text style={{ marginTop: 12 }}>ASSINATURA</Text>
         </div>
       </Container>

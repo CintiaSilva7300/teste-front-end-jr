@@ -259,5 +259,10 @@ const styles = {
     width: 247,
     height: 190,
   },
+  container: {
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
 };
 export default styles;

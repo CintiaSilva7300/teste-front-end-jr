@@ -30,3 +30,8 @@ export const TextOf = styled.div`
   line-height: normal;
   text-transform: uppercase;
 `;
+
+const styles = {
+  img: { marginTop: 10, width: 20, height: 20, margin: 9 },
+};
+export default styles;

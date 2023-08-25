@@ -1,11 +1,11 @@
-import { Card, Div, Text, TextRosa } from './styles';
-import monitorarTabletESmartohone1 from '../../utils/img/monitorar-tablet-e-smartohone1.png';
-import whiskey from '../../utils/img/whiskey.png';
-import supermercados from '../../utils/img/supermercados1.png';
-import ferramentas from '../../utils/img/ferramentas.png';
-import corrida from '../../utils/img/corrida.png';
 import moda from '../../utils/img/moda.png';
 import saude from '../../utils/img/saude.png';
+import whiskey from '../../utils/img/whiskey.png';
+import corrida from '../../utils/img/corrida.png';
+import { Card, Div, Text, TextRosa } from './styles';
+import ferramentas from '../../utils/img/ferramentas.png';
+import supermercados from '../../utils/img/supermercados1.png';
+import monitorarTabletESmartohone1 from '../../utils/img/monitorar-tablet-e-smartohone1.png';
 
 export default function CardCategory() {
   return (

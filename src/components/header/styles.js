@@ -56,6 +56,30 @@ export const TypographyRosa = styled.div`
 `;
 export const Text = styled.div`
   display: flex;
-
-  /* justify-content: space-evenly; */
 `;
+
+const styles = {
+  img: { width: 20, height: 20, flexShrink: 0, marginRight: 5, marginTop: -1 },
+  hr: { border: 0, height: 1, background: '#F0F0F0', margin: 0 },
+  input: {
+    width: 657,
+    height: 48,
+    margin: 10,
+    borderRadius: 10,
+    background: '#F6F5F2',
+
+    color: '--gray-1,#9F9F9F',
+    fontFamily: 'Poppins',
+    fontSize: 14,
+    fontStyle: 'normal',
+    fontWeight: 500,
+    lineHeight: 'normal',
+  },
+  imgCard: {
+    width: 24,
+    height: 24,
+    marginTop: 25,
+    marginRight: 30,
+  },
+};
+export default styles;

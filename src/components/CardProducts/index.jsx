@@ -21,13 +21,13 @@ import {
   Box,
 } from './styles';
 import axios from 'axios';
+import styles from './styles';
+import celular from '../../utils/img/celular.png';
 import React, { useState, useEffect } from 'react';
-import { API_TESTE_FRONT } from '../../utils/environments';
-import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import vectorRigth from '../../utils/img/vectorRigth.svg';
 import lefthVector from '../../utils/img/lefthVector.svg';
-import celular from '../../utils/img/celular.png';
-import styles from './styles';
+import { API_TESTE_FRONT } from '../../utils/environments';
+import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
 export default function CardProducts() {
   const [products, setProducts] = useState([]);
@@ -91,13 +91,7 @@ export default function CardProducts() {
           alt="imagem"
         />
 
-        <div
-          style={{
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-          }}
-        >
+        <div style={styles.container}>
           {visibleCardList.map((p) => (
             <div key={p.id}>
               <Card style={{ marginRight: 20 }}>

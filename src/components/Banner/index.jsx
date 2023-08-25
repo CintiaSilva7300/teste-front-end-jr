@@ -1,13 +1,12 @@
 import { Box, TypograpyT, TypograpyS, Button } from './styles';
-import './Banner.css';
-import BannerImg from '../../utils/img/Rectangle 250.png';
+import styles from './styles';
 
 export default function Banner() {
   return (
     <>
       <Box>
-        <div className="banner">
-          <div className="text">
+        <div style={styles.banner}>
+          <div style={styles.text}>
             <TypograpyT>Venha conhecer nossas</TypograpyT>
             <TypograpyT> promoções </TypograpyT>
             <TypograpyS>50% Off nos produtos</TypograpyS>

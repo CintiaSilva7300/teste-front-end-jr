@@ -1,4 +1,4 @@
-import {
+import styles, {
   Container,
   Box,
   TypographyTitle,
@@ -6,7 +6,6 @@ import {
   Card,
   CardText,
   CardTextInfo,
-  Input,
   Button,
 } from './styles';
 import img from '../../utils/img/Group831.svg';
@@ -17,16 +16,7 @@ export default function Footer() {
     <>
       <Container>
         <div style={{ display: 'flex' }}>
-          <div
-            style={{
-              display: 'block',
-              flexWrap: 'wrap',
-              justifyContent: 'scenter',
-              flexDirection: 'colum',
-              marginLeft: 100,
-              marginTop: 30,
-            }}
-          >
+          <div style={styles.container}>
             <TypographyTitle>Sobre nós</TypographyTitle>
 
             <div style={{ marginTop: 20 }}>
@@ -36,16 +26,7 @@ export default function Footer() {
             </div>
           </div>
 
-          <div
-            style={{
-              display: 'block',
-              flexWrap: 'wrap',
-              justifyContent: 'scenter',
-              flexDirection: 'colum',
-              marginLeft: 100,
-              marginTop: 30,
-            }}
-          >
+          <div style={styles.info}>
             <TypographyTitle>FALE CONOSCO</TypographyTitle>
             <div style={{ marginTop: 20 }}>
               <TypographyInfo>DÚVIDAS</TypographyInfo>
@@ -59,22 +40,12 @@ export default function Footer() {
             </div>
           </div>
 
-          <div
-            style={{
-              display: 'block',
-              flexWrap: 'wrap',
-              justifyContent: 'scenter',
-              flexDirection: 'colum',
-              marginLeft: 100,
-              marginTop: 30,
-            }}
-          >
+          <div style={styles.pag}>
             <TypographyTitle>FORMAS DE PAGAMENTO</TypographyTitle>
-
             <img src={formasPag} alt="imagem" style={{ marginTop: 20 }} />
           </div>
 
-          <Card style={{ marginBottom: 20, marginTop: 20, color: '#000' }}>
+          <Card style={styles.cardContainer}>
             <div style={{ marginTop: 40 }}>
               <CardText>Cadastre-se e Receba </CardText>
               <CardText>nossas novidades e promoçõess</CardText>
@@ -89,15 +60,7 @@ export default function Footer() {
                 <input
                   type="text"
                   placeholder="SEU E-MAIL"
-                  style={{
-                    marginTop: 10,
-                    marginLeft: 40,
-                    borderRadius: 4,
-                    border: ' 1px solid #2a2a2a',
-                    background: '#fff',
-                    width: 230,
-                    height: 45,
-                  }}
+                  style={styles.input}
                 />
 
                 <Button>Ok</Button>
@@ -108,17 +71,7 @@ export default function Footer() {
 
         <Box>
           <div style={{ marginLeft: 100, marginTop: 10 }}>
-            <p
-              style={{
-                color: '#FFF',
-                fontFamily: 'Poppins',
-                fontSize: 10,
-                fontStyle: 'normal',
-                fontWeight: 400,
-                textAlign: 'starts',
-                textTransform: 'uppercase',
-              }}
-            >
+            <p style={styles.text}>
               Copyright © 2019. Todos os direitos reservados. Todas as marcas e
               suas imagens são de propriedade de seus respectivos donos.
               <p style={{ margin: -0 }}>
@@ -128,16 +81,7 @@ export default function Footer() {
             </p>
           </div>
 
-          <img
-            style={{
-              marginLeft: 250,
-              width: 226.084,
-              height: 32,
-              marginTop: 20,
-            }}
-            src={img}
-            alt="imagem"
-          />
+          <img style={styles.img} src={img} alt="imagem" />
         </Box>
       </Container>
     </>

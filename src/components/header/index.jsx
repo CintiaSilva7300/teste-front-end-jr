@@ -7,16 +7,17 @@ import {
   Div,
   BoxCategory,
 } from './styles';
+import styles from './styles';
+import Category from '../Category';
 import img from '../../utils/img/Group35.svg';
-import imgShieldCheck from '../../utils/img/ShieldCheck.svg';
 import Truck from '../../utils/img/Truck.svg';
-import MagnifyingGlass from '../../utils/img/MagnifyingGlass.svg';
-import CreditCard from '../../utils/img/CreditCard.svg';
 import Group from '../../utils/img/Group.svg';
 import Heart from '../../utils/img/Heart.svg';
+import CreditCard from '../../utils/img/CreditCard.svg';
 import UserCircle from '../../utils/img/UserCircle.svg';
 import ShoppingCart from '../../utils/img/ShoppingCart.svg';
-import Category from '../Category';
+import imgShieldCheck from '../../utils/img/ShieldCheck.svg';
+import MagnifyingGlass from '../../utils/img/MagnifyingGlass.svg';
 
 export default function Header() {
   return (
@@ -25,18 +26,7 @@ export default function Header() {
         <BoxTypography>
           <Text>
             <TypographyGray>
-              <img
-                src={imgShieldCheck}
-                alt=""
-                srcset=""
-                style={{
-                  width: 20,
-                  height: 20,
-                  flexShrink: 0,
-                  marginRight: 5,
-                  marginTop: -1,
-                }}
-              />
+              <img src={imgShieldCheck} alt="" srcset="" style={styles.img} />
               Comprar
             </TypographyGray>
             <TypographyRosa>100% segura</TypographyRosa>
@@ -44,18 +34,7 @@ export default function Header() {
 
           <Text>
             <TypographyGray>
-              <img
-                src={Truck}
-                alt=""
-                srcset=""
-                style={{
-                  width: 20,
-                  height: 20,
-                  flexShrink: 0,
-                  marginRight: 5,
-                  marginTop: -1,
-                }}
-              />
+              <img src={Truck} alt="" srcset="" style={styles.img} />
               Frete grátis
             </TypographyGray>
             <TypographyRosa>acima de R$ 200</TypographyRosa>
@@ -63,52 +42,21 @@ export default function Header() {
 
           <Text>
             <TypographyGray>
-              <img
-                src={CreditCard}
-                alt=""
-                srcset=""
-                style={{
-                  width: 20,
-                  height: 20,
-                  flexShrink: 0,
-                  marginRight: 5,
-                  marginTop: -1,
-                }}
-              />
+              <img src={CreditCard} alt="" srcset="" style={styles.img} />
               Parcele
             </TypographyGray>
             <TypographyRosa> suas compras</TypographyRosa>
           </Text>
         </BoxTypography>
 
-        <hr
-          style={{
-            border: 0,
-            height: 1,
-            background: '#F0F0F0',
-            margin: 0,
-          }}
-        />
+        <hr style={styles.hr} />
       </Div>
 
       <Container>
         <img src={img} alt="imagem" style={{ padding: 10, marginLeft: 100 }} />
 
         <input
-          style={{
-            width: 657,
-            height: 48,
-            margin: 10,
-            borderRadius: 10,
-            background: '#F6F5F2',
-
-            color: '--gray-1,#9F9F9F',
-            fontFamily: 'Poppins',
-            fontSize: 14,
-            fontStyle: 'normal',
-            fontWeight: 500,
-            lineHeight: 'normal',
-          }}
+          style={styles.input}
           type="text"
           placeholder="O que você está buscando?"
           name="search"
@@ -120,35 +68,12 @@ export default function Header() {
           alt="imagem"
         />
 
-        <img
-          src={Group}
-          style={{ width: 24, height: 24, marginTop: 25, marginRight: 30 }}
-          alt="imagem"
-        />
-        <img
-          src={Heart}
-          style={{ width: 24, height: 24, marginTop: 25, marginRight: 30 }}
-          alt="imagem"
-        />
-        <img
-          src={UserCircle}
-          style={{ width: 24, height: 24, marginTop: 25, marginRight: 30 }}
-          alt="imagem"
-        />
-        <img
-          src={ShoppingCart}
-          style={{ width: 24, height: 24, marginTop: 25, marginRight: 30 }}
-          alt="imagem"
-        />
+        <img src={Group} style={styles.imgCard} alt="imagem" />
+        <img src={Heart} style={styles.imgCard} alt="imagem" />
+        <img src={UserCircle} style={styles.imgCard} alt="imagem" />
+        <img src={ShoppingCart} style={styles.imgCard} alt="imagem" />
 
-        <hr
-          style={{
-            border: 0,
-            height: 1,
-            background: '#F0F0F0',
-            margin: 0,
-          }}
-        />
+        <hr style={styles.hr} />
       </Container>
       <BoxCategory>
         <Category />

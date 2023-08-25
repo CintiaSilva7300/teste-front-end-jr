@@ -5,6 +5,7 @@ export const Container = styled.div`
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
+  margin-top: 20px;
 `;
 export const BoxCategory = styled.div`
   display: flex;
@@ -35,7 +36,7 @@ export const TypographyGray = styled.div`
   display: flex;
   justify-content: center;
   text-align: center;
-
+  margin-right: 5px;
   color: var(--gray-1, #9f9f9f);
   text-align: center;
   font-family: Poppins;
@@ -54,7 +55,7 @@ export const TypographyRosa = styled.div`
   line-height: normal;
 `;
 export const Text = styled.div`
-  /* display: flex; */
+  display: flex;
 
   /* justify-content: space-evenly; */
 `;

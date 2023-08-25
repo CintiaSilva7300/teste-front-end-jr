@@ -16,7 +16,7 @@ import Group from '../../utils/img/Group.svg';
 import Heart from '../../utils/img/Heart.svg';
 import UserCircle from '../../utils/img/UserCircle.svg';
 import ShoppingCart from '../../utils/img/ShoppingCart.svg';
-import Category from '../category';
+import Category from '../Category';
 
 export default function Header() {
   return (
@@ -38,8 +38,8 @@ export default function Header() {
                 }}
               />
               Comprar
-              <TypographyRosa>100% segura</TypographyRosa>
             </TypographyGray>
+            <TypographyRosa>100% segura</TypographyRosa>
           </Text>
 
           <Text>
@@ -57,8 +57,8 @@ export default function Header() {
                 }}
               />
               Frete grátis
-              <TypographyRosa>acima de R$ 200</TypographyRosa>
             </TypographyGray>
+            <TypographyRosa>acima de R$ 200</TypographyRosa>
           </Text>
 
           <Text>
@@ -76,8 +76,8 @@ export default function Header() {
                 }}
               />
               Parcele
-              <TypographyRosa>suas compras</TypographyRosa>
             </TypographyGray>
+            <TypographyRosa> suas compras</TypographyRosa>
           </Text>
         </BoxTypography>
 
@@ -92,7 +92,7 @@ export default function Header() {
       </Div>
 
       <Container>
-        <img src={img} alt="imagem" style={{ padding: 10 }} />
+        <img src={img} alt="imagem" style={{ padding: 10, marginLeft: 100 }} />
 
         <input
           style={{
@@ -122,22 +122,22 @@ export default function Header() {
 
         <img
           src={Group}
-          style={{ width: 24, height: 24, marginTop: 25, marginRight: 10 }}
+          style={{ width: 24, height: 24, marginTop: 25, marginRight: 30 }}
           alt="imagem"
         />
         <img
           src={Heart}
-          style={{ width: 24, height: 24, marginTop: 25, marginRight: 10 }}
+          style={{ width: 24, height: 24, marginTop: 25, marginRight: 30 }}
           alt="imagem"
         />
         <img
           src={UserCircle}
-          style={{ width: 24, height: 24, marginTop: 25, marginRight: 10 }}
+          style={{ width: 24, height: 24, marginTop: 25, marginRight: 30 }}
           alt="imagem"
         />
         <img
           src={ShoppingCart}
-          style={{ width: 24, height: 24, marginTop: 25, marginRight: 10 }}
+          style={{ width: 24, height: 24, marginTop: 25, marginRight: 30 }}
           alt="imagem"
         />
 

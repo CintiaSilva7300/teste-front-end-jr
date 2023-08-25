@@ -7,6 +7,7 @@ body {
 	vertical-align: baseline;
 
   background: #FFF;
+  overflow-x: hidden;
 }
 
 
